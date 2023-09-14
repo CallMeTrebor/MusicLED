@@ -5,6 +5,8 @@ VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AudioTransmiter", "AudioTransmiter\AudioTransmiter.csproj", "{6C5C9679-C396-4B47-8436-07E01A564F58}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AudioTransmiterTester", "AudioTransmiterTester\AudioTransmiterTester.csproj", "{4BD0A866-22BB-42FD-8CEC-2289041CBD7D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{6C5C9679-C396-4B47-8436-07E01A564F58}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6C5C9679-C396-4B47-8436-07E01A564F58}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6C5C9679-C396-4B47-8436-07E01A564F58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BD0A866-22BB-42FD-8CEC-2289041CBD7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BD0A866-22BB-42FD-8CEC-2289041CBD7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BD0A866-22BB-42FD-8CEC-2289041CBD7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BD0A866-22BB-42FD-8CEC-2289041CBD7D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

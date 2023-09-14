@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6C5C9679-C396-4B47-8436-07E01A564F58}</ProjectGuid>
+    <ProjectGuid>{4BD0A866-22BB-42FD-8CEC-2289041CBD7D}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>AudioTransmiter</RootNamespace>
-    <AssemblyName>AudioTransmiter</AssemblyName>
+    <RootNamespace>AudioTransmiterTester</RootNamespace>
+    <AssemblyName>AudioTransmiterTester</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
