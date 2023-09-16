@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using MathNet.Numerics;
 using MathNet.Numerics.IntegralTransforms;
+using AudioTransmiter;
 
 namespace AudioTransmiter
 {
@@ -38,11 +39,25 @@ namespace AudioTransmiter
                     frequencies[i] = i * frequencyResolution;
                 }
 
-                Console.Clear();
+                float maxMagnitude = 0;
+                int maxIndex = 0;
+                for (int i = 5; i < magnitude.Length / 2; i++)
+                {
+                    if (maxMagnitude < magnitude[i])
+                    {
+                        maxMagnitude = magnitude[i];
+                        maxIndex = i;
+                    }
+                }
+
+                float[] norm = FrequencyProcessor.NormalizedFrequencyArray(20, 24000, new float[] { (float)frequencies[maxIndex] });
+                Console.WriteLine($"{frequencies[maxIndex]} {magnitude[maxIndex]}: RGB({FrequencyProcessor.R(norm)}, {FrequencyProcessor.G(norm)}, {FrequencyProcessor.B(norm)})");
+                byte[] message = Encoding.ASCII.GetBytes($"{FrequencyProcessor.R(norm)}/{FrequencyProcessor.G(norm)}/{FrequencyProcessor.B(norm)}");
+                udpClient.Send(message, message.Length);
             };
             waveIn.StartRecording();
 
             while (true);
         }
-    }
+	}
 }
